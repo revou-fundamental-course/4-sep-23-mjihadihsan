@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Square Calculator</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+      
+    </head>
+
+    <body>
+        <header>
+            MAGIC SQUARE
+        </header>
+
+        <main>
+            <h1>Welcome to Magic Square!</h1>
+            <p>Here you can magically calculate the Area or the Perimeter of a Square by simply typing any number as you wish!</p>
+            <h2>Magic Square</h2>
+
+            <div class="squareimage"></div>
+            </br>
+            <div class="formulatitle">
+                Magic Formula
+            </div>
+            <div class="formula">
+                Area = Side length x Side length
+            </br>
+                Perimeter = 4 x Side length  
+            </div>
+            </br>
+
+            <div class="form-group">
+                <label for="sideLength">Type the side length of the square:</label>
+                </br>
+                <input type="number" id="sideLength" placeholder="Side length" step="any">
+            </div>
+            <button onclick="calculate()">Calculate</button>
+            <button onclick="reset()">Reset</button>
+            <div class="result">
+                <p>Area: <span id="areaResult">-</span></p>
+                <p>Perimeter: <span id="perimeterResult">-</span></p>
+            </div>
+        </main>
+
+    </body>
+</html>
+      
+
+
+
+
+
